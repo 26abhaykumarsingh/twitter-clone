@@ -12,23 +12,33 @@
 
 .post__body > img {
     border-radius: 20px;
+    max-width: 500px;
+    width: clamp(200px, 100%, 500px);
+    /* width: min(auto, 83%); */
+    height: auto;
 }
 
 .post__footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: rgb(83, 100, 113);
+}
+
+.post__footer > :hover {
+    color: var(--twitter-color);
+    cursor: no-drop;
 }
 
 .post__headerDescription {
     margin-bottom: 10px;
     font-size:15px;
-
 }
 
 .post__headerText > h3 {
     font-size: 15px;
     margin-bottom: 5px;
+    font-weight: 650;
 }
 
 .post__badge {
@@ -37,8 +47,8 @@
 }
 
 .post__headerSpecial {
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 15px;
     color: gray;
 }
 

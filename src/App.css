@@ -6,8 +6,55 @@ body {
 .app {
     display: flex;
     height: 100vh;
-    max-width: 1300px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 300px;
+}
+.feed{
+    width: 600px;
+}
+.widgets{
+    min-width: 350px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1280px){
+    .sidebar {
+        max-width: 70px;
+    }
+
+    .widgets{
+        min-width: 200px;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .widgets{
+        min-width: 290px;
+        width: fit-content;
+    }
+
+    .feed {
+        min-width: fit-content;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .app{
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .app{
+        padding: 0;
+    }
 }

@@ -13,7 +13,7 @@ function TweetBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      displayName: "abhay papa",
+      displayName: "fattocatto",
       username: "26abhay",
       verified: true,
       text: tweetMessage,
